@@ -17,10 +17,7 @@ Examples:
 
 
         </description>
-                <authors>
-                        <author>Robert Bissonnette</author>
-                        <author>iD Commerce + Logistics</author>
-                </authors>
+                <authors>Robert Bissonnette,iD Commerce + Logistics</authors>
                 <language>en-US</language>
                 <projecturl>https://github.com/robertbissonnette/AsyncEnumerable</projecturl>
                 <licenseurl>http://idcomlog.codeplex.com/license</licenseurl>
