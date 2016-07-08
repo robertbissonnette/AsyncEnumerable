@@ -20,7 +20,7 @@
     OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
     POSSIBILITY OF SUCH DAMAGE.
 */
-
+//#define CODE_COVERAGE
 using System;
 using System.Diagnostics;
 using System.Collections.Generic;
@@ -29,8 +29,13 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
+
 namespace System.Threading.Tasks
-{ 
+{
+
+#if !CODE_COVERAGE
+    [System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+#endif
     static class AsyncEnum
     {
         public static IAsyncEnumerable<T> Create<T>(Func<AsyncYielder<T>, Task> func)
@@ -160,6 +165,9 @@ namespace System.Threading.Tasks
         }
     }
 
+#if !CODE_COVERAGE
+    [System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+#endif
     sealed class AsyncYielder<T>
     {
         TaskCompletionSource<T> setTcs = new TaskCompletionSource<T>();
@@ -195,6 +203,9 @@ namespace System.Threading.Tasks
         }
     }
 
+#if !CODE_COVERAGE
+    [System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+#endif
     sealed class AsyncYielderDisposedException : ObjectDisposedException
     {
         internal AsyncYielderDisposedException()
