@@ -2,20 +2,6 @@
   <metadata>
     <id>AsyncEnumerable.Sources</id>
     <version>1.0.0.0</version>
-    <description>Allows for easier creation of IAsyncEnumerable supporting yield return and the such.  
-This class was taken from http://idcomlog.codeplex.com/ and packaged as a source only file to include in projects requiring it.
-
-Examples:
-			AsyncEnum.Create&lt;object&#91;&#93;&gt;(async y =>
-            {
-                object&#91;&#93; row;
-                while ((row = await reader.ReadRowAsync(y.CancellationToken)) != null)
-                {
-                    await y.YieldReturn(row);
-                }
-            });
-
-    </description>
     <authors>Robert Bissonnette,iD Commerce + Logistics</authors>
     <language>en-US</language>
     <projectUrl>https://github.com/robertbissonnette/AsyncEnumerable</projectUrl>
