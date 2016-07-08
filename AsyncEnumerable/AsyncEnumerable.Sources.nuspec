@@ -1,8 +1,8 @@
 ﻿<package>
-        <metadata>
-                <id>AsyncEnumberable.Sources</id>
-                <version>1.0.0.0</version>
-                <description>Allows for easier creation of IAsyncEnumerable supporting yield return and the such.  
+  <metadata>
+    <id>AsyncEnumerable.Sources</id>
+    <version>1.0.0.0</version>
+    <description>Allows for easier creation of IAsyncEnumerable supporting yield return and the such.  
 This class was taken from http://idcomlog.codeplex.com/ and packaged as a source only file to include in projects requiring it.
 
 Examples:
@@ -16,10 +16,10 @@ Examples:
             });
 
 
-        </description>
-                <authors>Robert Bissonnette,iD Commerce + Logistics</authors>
-                <language>en-US</language>
-                <projecturl>https://github.com/robertbissonnette/AsyncEnumerable</projecturl>
-                <licenseurl>http://idcomlog.codeplex.com/license</licenseurl>
-        </metadata>
+    </description>
+    <authors>Robert Bissonnette,iD Commerce + Logistics</authors>
+    <language>en-US</language>
+    <projectUrl>https://github.com/robertbissonnette/AsyncEnumerable</projectUrl>
+    <licenseUrl>http://idcomlog.codeplex.com/license</licenseUrl>
+  </metadata>
 </package>
