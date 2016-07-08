@@ -6,15 +6,14 @@
 This class was taken from http://idcomlog.codeplex.com/ and packaged as a source only file to include in projects requiring it.
 
 Examples:
-			AsyncEnum.Create&lt;object[]&gt;(async y =>
+			AsyncEnum.Create&lt;object&#91;&#93;&gt;(async y =>
             {
-                object[] row;
+                object&#91;&#93; row;
                 while ((row = await reader.ReadRowAsync(y.CancellationToken)) != null)
                 {
                     await y.YieldReturn(row);
                 }
             });
-
 
     </description>
     <authors>Robert Bissonnette,iD Commerce + Logistics</authors>
