@@ -12,13 +12,13 @@
     <projectUrl>https://github.com/robertbissonnette/AsyncEnumerable</projectUrl>
     <licenseUrl>http://idcomlog.codeplex.com/license</licenseUrl>
     <contentFiles>
-      <files include="**/**/*.*" buildAction="Compile" />
+      <files include="cs/any/*.*" buildAction="Compile" />
 	</contentFiles>
 	<dependencies> 
 		<dependency id="System.Interactive.Async" version="3.0.0" />
 	</dependencies>
   </metadata>
   <files>
-	<file src="*.cs" exclude="contentFiles\cs\net45" />
+	<file src="*.cs" target="contentFiles\cs\any" />
   </files>
 </package>
