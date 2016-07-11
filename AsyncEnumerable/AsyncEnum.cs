@@ -111,7 +111,9 @@ namespace System.Threading.Tasks
                 {
                     // the function returned a result.
 
+#pragma warning disable AsyncFixer02 // Long running or blocking operations under an async method
                     Current = yielder.YieldTask.Result;
+#pragma warning restore AsyncFixer02 // Long running or blocking operations under an async method
                     return true;
                 }
 
